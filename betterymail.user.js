@@ -19,6 +19,8 @@ var subfolders,
     '#masSearchAd {display: none;}',
     '.listnav .selected { background: deepskyblue;}',
     '.has-tabs #main {top: 60px;}',
+    '#shellnavigation {width: 200px;}',
+    '.#shellcontent {left: 210px;}',
     '.yui3-feedback .expand .feedback-content {display:none;}'
 ].join('');
 
