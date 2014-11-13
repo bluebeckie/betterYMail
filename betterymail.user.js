@@ -21,7 +21,7 @@ var subfolders,
     '.has-tabs #main, #main {max-width:100%; top: 60px;}',
     '#shellnavigation {width: 210px;}',
     '#shellcontent {left: 210px;}',
-    '.yui3-feedback .expand .feedback-content {display:none;}'
+    '.yui3-feedback-content {display: none;}'
 ].join('');
 
 style = document.createElement('style');
