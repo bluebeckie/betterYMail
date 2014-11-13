@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  more space
 // @author       beckie
-// @match            https://*.mail.yahoo.com/*
+// @match        https://*.mail.yahoo.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -18,9 +18,9 @@ var subfolders,
     '#slot_MB {display:none;}',
     '#masSearchAd {display: none;}',
     '.listnav .selected { background: deepskyblue;}',
-    '.has-tabs #main {top: 60px;}',
-    '#shellnavigation {width: 200px;}',
-    '.#shellcontent {left: 200px;}',
+    '.has-tabs #main, #main {max-width:100%; top: 60px;}',
+    '#shellnavigation {width: 210px;}',
+    '#shellcontent {left: 210px;}',
     '.yui3-feedback .expand .feedback-content {display:none;}'
 ].join('');
 
