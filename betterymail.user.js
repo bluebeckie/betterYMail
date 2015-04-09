@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         better YMail
 // @namespace    http://github.com/bluebeckie/betterYMail
-// @version      0.1
+// @version      1.1
 // @description  more space
 // @author       beckie
 // @match        https://*.mail.yahoo.com/*
@@ -9,6 +9,7 @@
 // ==/UserScript==
 
 var subfolders,
+    togglefolders,
     style,
     styles = [
     '#UH {padding-top:10px; height:4em;}',
@@ -28,6 +29,11 @@ var subfolders,
 style = document.createElement('style');
 style.innerHTML = styles;
 document.head.appendChild(style);
+
+togglefolders = document.querySelectorAll('li.openable');
+for (var i=0,j=togglefolders.length; i<j; i++) {
+     togglefolders[i].className = togglefolders[i].className + ' nav-open';
+};
 
 subfolders = document.querySelectorAll('.listnav-subfolder.hidden');
 for (var i=0,j=subfolders.length; i<j; i++) {
