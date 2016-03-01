@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         better YMail
 // @namespace    http://github.com/bluebeckie/betterYMail
-// @version      1.1
+// @version      1.1.2
 // @description  more space
 // @author       beckie
 // @match        https://*.mail.yahoo.com/*
@@ -17,6 +17,7 @@ var subfolders,
     '.wide-right-rail #shellcontent, #shellcontent {right:0;}',
     '.wide-right-rail #theAd, #theAd {width: 0;}',
     '#slot_MB {display:none;}',
+    '.vp-off .list-view-items-page .mb-list-ad {display: none !important;}',
     '#masSearchAd {display: none;}',
     '.listnav .selected { background: deepskyblue;}',
     '.listnav-container {visibility: visible;}',
